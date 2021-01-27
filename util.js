@@ -33,7 +33,7 @@ exports.caesar = (str, key) => {
     for (let i = 0; i < str.length; i++) {
         // Check if the current character is a punctuation
         if (checkPunctuation(str[i])) {
-            cryptedStr = cryptedStr += str[i];
+            cryptedStr += str[i];
         } else {
             const newCharPosition = getPosition(alphabet.indexOf(str[i]), key);
             cryptedStr = cryptedStr += alphabet[newCharPosition]
