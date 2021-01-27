@@ -36,7 +36,7 @@ exports.caesar = (str, key) => {
             cryptedStr += str[i];
         } else {
             const newCharPosition = getPosition(alphabet.indexOf(str[i]), key);
-            cryptedStr = cryptedStr += alphabet[newCharPosition]
+            cryptedStr += alphabet[newCharPosition]
         }
     }
 
